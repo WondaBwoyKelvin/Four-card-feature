@@ -1,0 +1,140 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: whitesmoke;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-top: 60px;
+}
+
+section {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.description {
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+section h1 {
+    margin-top: 5px;
+    font-size: 26px;
+}
+
+.sub-desc {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(0, 0%, 73%);
+    padding: 0 260px;
+}
+
+#box {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    height: 250px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+#box p {
+    padding-left: 20px;
+    color: hsl(0, 1%, 67%);
+    font-size: 15px;
+}
+
+#box img {
+    float: right;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+
+.title {
+    font-weight: 600;
+    padding-left: 20px;
+    font-size: 19px;
+}
+
+.grid1 {
+    grid-area: 1 / 3 / 2 / 4;
+    border-top: 6px solid hsl(0, 78%, 62%);
+}
+
+.grid2 {
+    grid-area: 2 / 2 / 3 / 3;
+    border-top: 6px solid hsl(212, 86%, 64%);
+}
+
+.grid3 {
+    grid-area: 2 / 3 / 3 / 4;
+    border-top: 6px solid hsl(34, 97%, 64%);
+}
+
+.grid4 {
+    grid-area: 2 / 4 / 3 / 5;
+    border-top: 6px solid hsl(180, 62%, 55%);
+}
+
+.attribution {
+    margin-top: 260px;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+/* media Queries */
+
+@media screen and (max-width:374px) {
+    main {
+        padding-left: 50px;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
+    .grid2 {
+        grid-area: 1 / 3 / 2 / 4;
+    }
+    .grid1 {
+        grid-area: 2 / 3 / 3 / 4;
+    }
+    .grid3 {
+        grid-area: 3 / 3 / 4 / 4;
+    }
+    .grid4 {
+        grid-area: 4 / 3 / 5 / 4;
+    }
+    section {
+        margin-left: 30px;
+    }
+    section h1 {
+        font-size: 20px;
+    }
+    .title {
+        font-size: 10px;
+    }
+    .sub-desc {
+        padding: 0 20px;
+    }
+    #box {
+        width: 320px;
+    }
+}
